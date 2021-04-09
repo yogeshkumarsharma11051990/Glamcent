@@ -1,8 +1,9 @@
 <?php
 
-include('vendor/autoload.php'); 
+    include('vendor/autoload.php'); 
     use OpenTok\OpenTok;
-
+    use Session;
+    
 try{
 
     $API_KEY = '47190794';

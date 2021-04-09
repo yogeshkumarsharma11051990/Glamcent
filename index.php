@@ -2,9 +2,9 @@
 
     require('vendor/autoload.php'); 
     use OpenTok\OpenTok;
-use OpenTok\Session;
-use OpenTok\Role; 
-use OpenTok\MediaMode;
+    use OpenTok\Session;
+    use OpenTok\Role; 
+    use OpenTok\MediaMode;
     
 try{
 

@@ -26,7 +26,7 @@ $token = $sessionMain->generateToken(array(
     'initialLayoutClassList' => array('focus')
 ));
 
-$resultArray = array("session_id"=>$sessionId, "token_id" => $token);
+$resultArray = array("session_id"=>$sessionId, "token_id" => $token, "apiKey"=> $API_KEY);
 
 echo json_encode($resultArray);
 

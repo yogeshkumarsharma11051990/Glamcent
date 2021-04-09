@@ -1,8 +1,10 @@
 <?php
 
-    include('vendor/autoload.php'); 
+    require('vendor/autoload.php'); 
     use OpenTok\OpenTok;
-    use Session;
+use OpenTok\Session;
+use OpenTok\Role; 
+use OpenTok\MediaMode;
     
 try{
 

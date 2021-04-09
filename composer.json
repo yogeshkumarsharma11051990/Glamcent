@@ -1,6 +1,5 @@
 {
-    
     "require": {
-        "opentok/opentok": "^4.5"
+        "opentok/opentok": "2.3.x"
     }
 }

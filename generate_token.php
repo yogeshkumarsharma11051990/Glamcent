@@ -13,6 +13,7 @@ $API_SECRET = '749b45cf5576d90b0f1e76a0d0ac3097a07f5789';
 $apiObj = new OpenTok($API_KEY, $API_SECRET);
 
 $token = $apiObj->generateToken($sessionId);
+$session = $apiObj->createSession(array('mediaMode' => MediaMode::ROUTED));
 // Generate a Token by calling the method on the Session (returned from createSession)
 $token = $session->generateToken();
 

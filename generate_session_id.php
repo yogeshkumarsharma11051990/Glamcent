@@ -1,8 +1,8 @@
 <?php
 
-require 'OpenTok/src/OpenTok/OpenTok.php';
+    include('vendor/autoload.php'); 
+    use OpenTok\OpenTok;
 
-    
     $API_KEY = '47190794';
     $API_SECRET = '749b45cf5576d90b0f1e76a0d0ac3097a07f5789';
 

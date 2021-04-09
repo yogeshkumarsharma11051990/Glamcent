@@ -3,8 +3,6 @@
 include('vendor/autoload.php'); 
     use OpenTok\OpenTok;
 
-echo "hello";
-
 try{
 
     $API_KEY = '47190794';
@@ -16,6 +14,7 @@ try{
     $apiObj = new OpenTok($API_KEY, $API_SECRET);
     $session = $apiObj->createSession(array('mediaMode' => MediaMode::ROUTED));
     echo $session->getSessionId();
+    echo "hello";
     
 }catch(Exception $e) {
     echo 'Message: ' .$e->getMessage();

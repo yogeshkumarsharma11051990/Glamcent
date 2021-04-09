@@ -12,7 +12,7 @@ try{
     //die();
 
     $apiObj = new OpenTok($API_KEY, $API_SECRET);
-    //$session = $apiObj->createSession(array('mediaMode' => MediaMode::ROUTED));
+    $session = $apiObj->createSession(array('mediaMode' => MediaMode::ROUTED));
     //echo $session->getSessionId();
     //echo "hello";
     

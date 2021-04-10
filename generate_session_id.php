@@ -26,7 +26,7 @@ $sessionId = $sessionMain->getSessionId();
     'initialLayoutClassList' => array('focus')
 ));*/
 
-$resultArray = array("session_id"=>$sessionId, "apiKey"=> $API_KEY);
+$resultArray = array("session_id"=>$sessionId, "token_id" =>"", "apiKey"=> $API_KEY);
 
 echo json_encode($resultArray);
 

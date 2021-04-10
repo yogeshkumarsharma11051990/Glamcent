@@ -14,7 +14,7 @@ $sessionMain = $apiObj->createSession(array('mediaMode' => MediaMode::ROUTED));
 
 $sessionId = $sessionMain->getSessionId();
 
-//$token = $apiObj->generateToken($sessionId);
+$token = $apiObj->generateToken($sessionId);
 // Generate a Token by calling the method on the Session (returned from createSession)
 //$token = $sessionMain->generateToken();
 
@@ -26,7 +26,7 @@ $sessionId = $sessionMain->getSessionId();
     'initialLayoutClassList' => array('focus')
 ));*/
 
-$resultArray = array("session_id"=>$sessionId, "token_id" =>"", "apiKey"=> $API_KEY);
+$resultArray = array("session_id"=>$sessionId, "token_id" =>$token, "apiKey"=> $API_KEY);
 
 echo json_encode($resultArray);
 
